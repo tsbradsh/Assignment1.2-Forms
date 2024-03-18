@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<!-- 	-------- TO-DO: ADD META TAG AND NAME HERE -------- -->
+	<meta name="author" content="Tyler Bradshaw">
+	<title>Form Activity Solution File</title>
+<!-- 	-------- TO-DO: ADD LINK TO CSS HERE -------- -->
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+
+<!-- 	-------- TO-DO: ADD FORM CODE HERE DURING CLASS, FOLLOW ALONG TO COMPLETE -------- -->
+			<form action="https://wp.zybooks.com/form-viewer.php" method="post">
+				<div>
+					<label for="fname">Full Name:<span class="required">*</span></label>
+					<input id="fname" name="fname" type="text" required aria-required="true" />
+				</div>
+				<div>
+					<label for="em">Email:<span class="required">*</span></label>
+					<input id="em" name="em" type="email" required aria-required="true" />
+				</div>				
+				<div>
+					<label for="ph">Phone:<span class="required">*</span></label>
+					<input id="ph" name="ph" type="tel" required aria-required="true"/>
+				</div>
+				<fieldset>
+					<legend>Preferred method of contact:<span class="required">*</span></legend>
+					<input id="r1" name="rlist" type="radio" value="Phone"/>
+					<label for="r1">Phone</label>
+					<input id="r2" name="rlist" type="radio" value="Email" />
+					<label for="r2">Email</label>
+				</fieldset>
+				<div>
+					<label for="st">State:</label>
+					<input id="st" name="st" type="text" list="states" />
+					<datalist id="states">
+						<select>
+							<option value="Alabama"></option>
+							<option value="Alaska"></option>
+							<option value="Arizona"></option>
+							<option value="Arkansas"></option>
+							<option value="California"></option>
+							<option value="Colorado"></option>
+							<option value="Connecticut"></option>
+							<option value="Delaware"></option>
+							<option value="Florida"></option>
+							<option value="Georgia"></option>
+							<option value="Hawaii"></option>
+							<option value="Idaho"></option>
+							<option value="Illinois"></option>
+							<option value="Indiana"></option>
+							<option value="Iowa"></option>
+							<option value="Kansas"></option>
+							<option value="Kentucky"></option>
+							<option value="Louisiana"></option>
+							<option value="Maine"></option>
+							<option value="Maryland"></option>
+							<option value="Massachusetts"></option>
+							<option value="Michigan"></option>
+							<option value="Minnesota"></option>
+							<option value="Mississippi"></option>
+							<option value="Missouri"></option>
+							<option value="Montana"></option>
+							<option value="Nebraska"></option>
+							<option value="Nevada"></option>
+							<option value="New Hampshire"></option>
+							<option value="New Jersey"></option>
+							<option value="New Mexico"></option>
+							<option value="New York"></option>
+							<option value="North Carolina"></option>
+							<option value="North Dakota"></option>
+							<option value="Ohio"></option>
+							<option value="Oklahoma"></option>
+							<option value="Oregon"></option>
+							<option value="Pennsylvania"></option>
+							<option value="Rhode Island"></option>
+							<option value="South Carolina"></option>
+							<option value="South Dakota"></option>
+							<option value="Tennessee"></option>
+							<option value="Texas"></option>
+							<option value="Utah"></option>
+							<option value="Vermont"></option>
+							<option value="Virginia"></option>
+							<option value="Washington"></option>
+							<option value="West Virginia"></option>
+							<option value="Wisconsin"></option>
+							<option value="Wyoming"></option>
+						</select>
+					</datalist>
+				</div>
+				<div>
+					<label for="com">Comments:</label>
+					<textarea id="com" name="com"></textarea>
+				</div>
+				<div>
+					<input type="submit" />
+				</div>
+			</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
